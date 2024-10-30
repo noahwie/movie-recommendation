@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 import java.util.Random;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://noahwie.github.io/movie-recommendation/")
 @RestController
 @RequestMapping("/api/movies")
 public class MovieController {

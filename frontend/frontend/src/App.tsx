@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './App.css';
 
 function App() {
   const [movie, setMovie] = useState<string | null>(null);
@@ -15,11 +16,11 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Don't know what to watch?</h1>
+      <h1 className="title">Don't know what to watch?</h1>
       {movie ? (
-        <p>You should watch: <strong>{movie}</strong></p>
+        <p className='paragraph'>You should watch: <strong className='answer'>{movie}</strong></p>
       ): (
-        <button onClick={getRecommendation}>Press me to get a recommendation</button>
+        <button className="button" onClick={getRecommendation}>Press me to get a recommendation</button>
       )}
     </div>
   );

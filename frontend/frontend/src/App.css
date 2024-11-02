@@ -34,3 +34,8 @@ p {
   display: block;
   margin: auto;
 }
+
+.banner {
+  padding: 100px;
+  background-color: white;
+}
